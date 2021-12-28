@@ -6,15 +6,15 @@ Objects:
         User
             user_name 
             income
-            needs(name, amount)
-            wants(name, amount)
-            savings(name, amount)
+            needs
+            wants
+            savings
         Budget
             period
             expected_budget(user)
             actual_budget(user)
         PdfReport
             filename
-            generate(user_name, budget)
+            generate(user, budget)
 
 
