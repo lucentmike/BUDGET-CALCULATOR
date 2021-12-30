@@ -1,7 +1,8 @@
 Title: Budget-Calculator
 Description: An interactive program that takes in your monthly income. 
 Seperates your expenses into Needs (50), Wants (30), and Savings/Debt (20). 
-Using the 50/30/20 Rule, shows you want each category should have, and what your actual result is based on your inputs. Then generates
+Using the 50/30/20 Rule, shows you want each category should have, 
+and what your actual result is based on your inputs. Then generates
 a Pdf file with the Name, Month, Expected Budget, and Actual Budget       
 Objects:
         User
