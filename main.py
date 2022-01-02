@@ -18,5 +18,5 @@ while True:
     except:
        print("That is not a valid entry!")
 
-report1=PdfReport(budget.period)
-report1.generate(user, budget)
+report=PdfReport(budget.period)
+report.generate(user, budget)
