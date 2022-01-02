@@ -5,7 +5,7 @@ from reports import PdfReport
 
 #Takes in user input and executes code
 
-budget = Budget(period = input("Enter the budget period (ex: January 2021): "))
+budget = Budget(period = input("Enter the budget period (ex: January 2022): "))
 
 while True:
 
