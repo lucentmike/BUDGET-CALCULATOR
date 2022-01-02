@@ -1,14 +1,22 @@
+#Import classes 
+
 from budget import User, Budget
 from reports import PdfReport
 
 #Takes in user input and executes code
 
-budget1 = Budget(period = input("Enter the budget period (ex: January 2021): "))
+budget = Budget(period = input("Enter the budget period (ex: January 2021): "))
 
-user1 = User(user_name= input("Enter your Name: "), income= float(input("Enter your yout total monthly income: ")), \
-needs=float(input("Enter your total monthly Needs (Bills, Gas, Groceries, Personal Care): ")), \
-wants =float(input("Enter your total monthly Wants (Clothing, Dining Out, Gifts: ")), \
-savings = float(input("Enter your total monthly Savings/Debts (LT Savins, ST Savings, Credit Cards): ")))
+while True:
 
-report1=PdfReport(budget1.period)
-report1.generate(user1, budget1)
+    try:
+        user = User(user_name= input("Enter your Name: "), income= float(input("Enter your yout total monthly income: ")), \
+        needs=float(input("Enter your total monthly Needs (Bills, Gas, Groceries, Personal Care): ")), \
+        wants =float(input("Enter your total monthly Wants (Clothing, Dining Out, Gifts: ")), \
+        savings = float(input("Enter your total monthly Savings/Debts (LT Savins, ST Savings, Credit Cards): ")))
+        break
+    except:
+       print("That is not a valid entry!")
+
+report1=PdfReport(budget.period)
+report1.generate(user, budget)
